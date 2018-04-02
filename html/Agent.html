@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HummingBird</title>
+    <link rel="stylesheet" href="../css/Agent.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="no_pad">
+            <div class="menu">
+                <div class="logo"><button id="homeButton" style="background-color: #333; border:none;" onclick="directToHome()"><img class="logo" src="../resources/hummingbird_white.png" alt=""></button></div>
+
+                <div class="menu_option"><button id="profileButton" style="background-color: #333; border:none;" onclick="directToHome()"><img class="logo" src="../resources/user.png" alt=""></button></div>
+
+                <div class="menu_option"><button id="chatButton" style="background-color: #333; border:none;" onclick="directToChat()"><img class="logo" src="../resources/envelope.png" alt=""></button></div>
+
+            </div>
+			
+			<div class="content">
+				<h1>Find an Agent</h1>
+
+				<div id="sort_div">
+					<label for="sort">Sort By: </label>
+
+					<select id="sort" name="sort">
+						<option value ="rating">Best Rating</option>
+						<option value ="nearest">Nearest</option>
+						<option value ="youngest">Youngest</option>
+						<option value ="oldest">Oldest</option>
+					</select>
+				</div>
+
+				<div id="agentContainer">
+	
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="../js/Agent.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hummingbird</title>
+    <link rel="stylesheet" href="../css/Chat.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="no_pad">
+            <div class="menu">
+                <div class="logo"><a href=""><img class="img_btn logo right" src="../resources/hummingbird_white.png" alt=""></a></div>
+                <div class="menu_option"><a href="Settings.html"><img class="img_btn logo right nav_btn" src="../resources/user.png" alt="Settings"></a></div>
+                <div class="menu_option"><a href="Chat.html"><img class="img_btn logo right nav_btn" src="../resources/envelope.png" alt="Messages"></a></div>
+            </div>
+        </div>
+
+        <div class="top_bar no_pad flex">
+            <div class="left_panel_bar">
+            </div>
+            <div class="right_panel_bar">
+                <p id="friend_name">Bob jones</p>
+            </div>
+        </div>
+
+        <div class="flex chatbox no_pad">
+            <div id="friend_panel" class="left_panel no_pad"></div>
+            <div class="right_panel no_pad">
+                <div id="chat"></div>
+                <div class="empty"></div>
+                <input id="chat_text" class="textarea enter_text no_pad" type="text" placeholder="Type Here!" onkeypress="sendMessage(event)"></div>
+            </div>
+        </div>
+</body>
+</html>
+
+<script src="../js/Chat.js"></script>

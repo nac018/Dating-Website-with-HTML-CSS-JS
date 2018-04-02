@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HummingBird</title>
+    <link rel="stylesheet" href="../css/ChooseAgent.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+<div class="container">
+
+    <div class="no_pad">
+        <div class="menu flex">
+            <div class="logo">
+                <button id="homeButton" style="background-color: #333; border:none;" onclick="directToHome()"><img
+                        class="logo" src="../resources/hummingbird_white.png" alt=""></button>
+            </div>
+
+            <div class="menu_option">
+                <button id="profileButton" style="background-color: #333; border:none;" onclick="directToHome()"><img
+                        class="logo" src="../resources/user.png" alt=""></button>
+            </div>
+
+            <div class="menu_option">
+                <button id="chatButton" style="background-color: #333; border:none;" onclick="directToChat()"><img
+                        class="logo" src="../resources/envelope.png" alt=""></button>
+            </div>
+
+        </div>
+
+        <div class="content">
+            <h1>Choosing an Agent</h1>
+
+            <a href="">
+                <div class="agent">
+                    <div class="agent_left_panel">
+                        <img id="agent_photo" class="agent_photo" src="../resources/default_Profile.jpg" alt="">
+                    </div>
+
+                    <div class="agent_right_panel">
+                        <h3 id="name">Agent Name: John Johnson</h3>
+                        <h3 id="age">Age: 32</h3>
+                        <h3 id="location">Location: San Diego, CA</h3>
+                        <h3 id="rating">Rating: ★★★☆☆</h3>
+                        <h3 id="experience">Experience:</h3>
+                    </div>
+                </div>
+            </a>
+
+            <div id="reviews"></div>
+
+
+            <button class="back_button" onclick="directToAgent()">Back</button>
+            <button class="request_button" onclick="directToRequested()">Request</button>
+
+        </div>
+    </div>
+</div>
+
+<script src="../js/ChooseAgent.js"></script>
+
+
+</body>
+
+</html>

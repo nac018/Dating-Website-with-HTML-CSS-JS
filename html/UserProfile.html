@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>User's Profile</title>
+    <link rel="stylesheet" href="../css/UserProfile.css">
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<body>
+  <div class="container">
+
+        <div class="no_pad">
+            <div class="menu">
+                <div class="logo"><a href=""><img class="img_btn logo right" src="../resources/hummingbird_white.png" alt=""></a></div>
+                <div class="menu_option"><a href=""><img class="img_btn logo right nav_btn" src="../resources/user.png" alt="Settings"></a></div>
+                <div class="menu_option"><a href=""><img class="img_btn logo right nav_btn" src="../resources/envelope.png" alt="Messages"></a></div>
+            </div>
+        </div>
+
+        <div id="form_container">
+            <h3>Update Profile</h3>
+
+            <div>
+                <a href=""><img id="placeholder" src="../resources/Profile_icon.png" alt=""></a>
+            </div>
+
+            <br>
+
+            <form id="form">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Full Name" value="Bob Jones">
+
+                <label for="age">Age</label>
+                <input type="number" id="age" name="age" placeholder="Age" value="35">
+
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone" placeholder="Phone" value="661-252-4214">
+
+                <label for="city">City</label>
+                <input type="text" id="city" name="city" placeholder="City" value="San Diego">
+
+                <label for="ethnicity">Ethnicity</label>
+                <input type="text" id="ethnicity" name="ethnicity" placeholder="Ethnicity" value="African American">
+
+                <label for="prof">Profession</label>
+                <input type="text" id="prof" name="prof" placeholder="Profession" value="Teacher">
+            
+                <label for="sex">Sex</label>
+                <select id="sex" name="Sex">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+				</select>
+
+				<h3>Looking For</h3>
+				<label for="part_sex">Sex</label>
+                <select id="part_sex">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+				</select>
+
+				<label for="part_age">Age</label>
+                <select id="part_age" name="part_age">
+					<option>23 or below</option>
+					<option>26~34</option>
+					<option>35~45</option>
+					<option>45 or above</option>
+				</select>
+
+                <label for="part_ethnicity">Ethnicity</label>
+				<input type="text" id="part_ethnicity" name="part_ethnicity" placeholder="Ethnicity" value="African American">
+
+				<label for="city_dist">Distance</label>
+                <select id="city_dist" name="city_dist">
+					<option>4 miles or less</option>
+					<option>5~14 miles</option>
+					<option>15~24 miles</option>
+					<option>25~34 miles</option>
+					<option>35 miles or above</option>
+				</select>
+
+                <label for="about_me">About Me</label>
+                <textarea id="about_me" name="about_me" placeholder="Enter something you'd like people to know about you!">About user...</textarea>
+            
+                <input type="submit" value="Submit" onclick="updateUserData()">
+            </form>
+
+        </div>
+
+    </div>
+</body>
+</html>
+
+<script src="../js/UserProfile.js"></script>

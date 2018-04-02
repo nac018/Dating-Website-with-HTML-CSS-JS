@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HummingBird</title>
+    <link rel="stylesheet" href="../css/Matched.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <div class="container">
+			
+        <div class="no_pad">
+            <div class="menu flex">
+                <div class="logo"><button id="homeButton" style="background-color: #333; border:none;" onclick="directToHome()"><img class="logo" src="../resources/hummingbird_white.png" alt=""></button></div>
+
+                <div class="menu_option"><button id="profileButton" style="background-color: #333; border:none;" onclick="directToHome()"><img class="logo" src="../resources/user.png" alt=""></button></div>
+
+                <div class="menu_option"><button id="chatButton" style="background-color: #333; border:none;" onclick="directToChat()"><img class="logo" src="../resources/envelope.png" alt=""></button></div>
+
+                <div><p class="menu_option menu_text welcome_text">Welcome, Bob!</p></div>
+			</div>
+
+			<p style="text-align: center; font-weight: bold; font-size: 25px"> Client Matched Successfully! </p>
+			<div style="text-align: center;">
+			<button class="cancel_button" onclick="directToAgentManagement()" style="font-size: 15px;">Cancel Matchmaking</button>
+			</div>
+		</div>
+	</div>
+
+	<script src="../js/Matched.js"></script>
+
+
+</body>
+
+</html>

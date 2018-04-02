@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HummingBird</title>
+    <link rel="stylesheet" href="../css/Settings.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <div class="container">
+        <div class="no_pad">
+            <div class="menu flex">
+                <div class="logo"><a href=""><img class="img_btn logo right" src="../resources/hummingbird_white.png" alt=""></a></div>
+                <div class="menu_option"><a href="Settings.html"><img class="img_btn logo right nav_btn" src="../resources/user.png" alt="Settings"></a></div>
+                <div class="menu_option"><a href="Chat.html"><img class="img_btn logo right nav_btn" src="../resources/envelope.png" alt="Messages"></a></div>
+            </div>
+        </div>
+
+        <div id="settings">
+            <h3>Account Settings</h3>
+            <form id="settings_form">
+                <label for="name">Full name</label>
+                <input type="text" id="name" name="name" placeholder="Full Name">
+            
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Password">
+
+                <label for="password_repeat">Repeat Password</label>
+                <input type="password" id="password_repeat" name="password_repeat" placeholder="Re-enter New Password">
+            
+                <label for="language">Language</label>
+                <select id="language" name="Language">
+                <option value="eng">English</option>
+                </select>
+            
+                <input class="submit" type="submit" value="Update">
+            </form>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
+
+<script src="../js/Settings.js"></script>

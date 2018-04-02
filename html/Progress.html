@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HummingBird</title>
+    <link rel="stylesheet" href="../css/Progress.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+<div class="container">
+
+    <div class="no_pad">
+        <div class="menu">
+            <div class="logo"><a href=""><img class="img_btn logo right" src="../resources/hummingbird_white.png" alt=""></a></div>
+            <div class="menu_option"><a href="Settings.html"><img class="img_btn logo right nav_btn" src="../resources/user.png" alt="Settings"></a></div>
+            <div class="menu_option"><a href="Chat.html"><img class="img_btn logo right nav_btn" src="../resources/envelope.png" alt="Messages"></a></div>
+        </div>
+    </div>
+
+    <div class="top_bar no_pad flex">
+        <div class="left_panel_bar">
+            <p>To-Do</p>
+            <button id="add_to_do" onclick="showModal()">+</button>
+        </div>
+        <div class="right_panel_bar">
+            <p>Progress</p>
+        </div>
+    </div>
+
+    <div class="flex no_pad">
+        <div class="left_panel no_pad">
+            <div id="task_list"></div>
+        </div>
+
+        <div class="right_panel no_pad">
+            <div>
+                <ul id="progress_bar">
+                    <li class="progress" onclick="updateProgress(this)">1</li>
+                    <li class="progress" onclick="updateProgress(this)">2</li>
+                    <li class="progress" onclick="updateProgress(this)">3</li>
+                    <li class="progress" onclick="updateProgress(this)">4</li>
+                    <li class="progress" onclick="updateProgress(this)">5</li>
+                </ul>
+                <ul id="progress_bar_text">
+                    <li class="progress_text">1. Description</li>
+                    <li class="progress_text">2. Description</li>
+                    <li class="progress_text">3. Description</li>
+                    <li class="progress_text">4. Description</li>
+                    <li class="progress_text">5. Description</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="taskModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div id="form_container">
+                <h3>Add a New Task</h3>
+                <form id="form">
+                    <input type="text" id="task_name" name="title" placeholder="Task Name">
+                </form>
+                <br>
+                <button class="submit" onclick="addNewTask()">Submit</button>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+</body>
+</html>
+
+<script src="../js/Progress.js"></script>

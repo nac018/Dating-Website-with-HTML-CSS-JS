@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>User Registration</title>
+    <link rel="stylesheet" href="../css/UserSignup.css">
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+  <div class="container">
+
+        <div class="no_pad">
+            <div class="menu">
+                <div class="logo"><a href=""><img class="img_btn logo right" src="../resources/hummingbird_white.png" alt=""></a></div>
+            </div>
+        </div>
+
+        <div id="form_container">
+            <h3>User Registration</h3>
+
+            <div>
+                <a href=""><img id="placeholder" src="../resources/Profile_icon.png" alt=""></a>
+            </div>
+
+            <br>
+
+            <form id="form">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" placeholder="Username">
+
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Password">
+
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Full Name">
+
+                <label for="age">Age</label>
+                <input type="number" id="age" name="age" placeholder="Age">
+
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone" placeholder="Phone">
+
+                <label for="city">City</label>
+                <input type="text" id="city" name="city" placeholder="City">
+
+                <label for="ethnicity">Ethnicity</label>
+                <input type="text" id="ethnicity" name="ethnicity" placeholder="Ethnicity">
+
+                <label for="prof">Profession</label>
+                <input type="text" id="prof" name="prof" placeholder="Profession">
+            
+                <label for="sex">Sex</label>
+                <select id="sex" name="Sex">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+				</select>
+
+                <label for="about_me">About Me</label>
+                <textarea id="about_me" name="about_me" placeholder="Enter something you'd like people to know about you!"></textarea>
+
+
+                <h3>Looking For</h3>
+				<label for="part_sex">Sex</label>
+                <select id="part_sex" name="part_sex">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+				</select>
+
+				<label for="part_age">Age</label>
+                <select id="part_age" name="part_age">
+					<option>23 or below</option>
+					<option>26~34</option>
+					<option>35~45</option>
+					<option>45 or above</option>
+				</select>
+
+                <label for="part_ethnicity">Ethnicity</label>
+				<input type="text" id="part_ethnicity" name="part_ethnicity" placeholder="Ethnicity">
+
+				<label for="city_dist">Distance</label>
+                <select id="city_dist" name="city_dist">
+					<option>4 miles or less</option>
+					<option>5~14 miles</option>
+					<option>15~24 miles</option>
+					<option>25~34 miles</option>
+					<option>35 miles or above</option>
+				</select>
+
+                <input type="submit" onclick="onSubmit(); return false" value="Submit">
+            </form>
+
+        </div>
+
+    </div>
+</body>
+</html>
+
+<script src="../js/UserSignup.js"></script>

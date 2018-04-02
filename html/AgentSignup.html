@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Agent Registration</title>
+    <link rel="stylesheet" href="../css/AgentSignup.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <div class="container">
+
+
+        <div class="no_pad">
+            <div class="menu flex">
+                <div class="logo"><a href=""><img class="img_btn logo right" src="../resources/hummingbird_white.png" alt=""></a></div>
+                <div class="menu_option"><a href=""><img class="img_btn logo right nav_btn" src="../resources/user.png" alt="Settings"></a></div>
+                <div class="menu_option"><a href=""><img class="img_btn logo right nav_btn" src="../resources/envelope.png" alt="Messages"></a></div>
+            </div>
+        </div>
+
+        <div id="form_container">
+            <h3>Agent Registration</h3>
+
+            <div>
+                <a href=""><img id="placeholder" src="../resources/Profile_icon.png" alt=""></a>
+            </div>
+
+            <br>
+
+            <form id="form">
+
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" placeholder="Username">
+
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Password">
+
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Full Name">
+
+                <label for="age">Age</label>
+                <input type="number" id="age" name="age" placeholder="Age">
+
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone" placeholder="Phone">
+
+                <label for="city">City</label>
+                <input type="text" id="city" name="city" placeholder="City">
+
+                <label for="ethnicity">Ethnicity</label>
+                <input type="text" id="ethnicity" name="ethnicity" placeholder="Ethnicity">
+
+
+                <label for="prof">Profession</label>
+                <input type="text" id="prof" name="prof" placeholder="Profession">
+            
+                <label for="sex">Sex</label>
+                <select id="sex" name="Sex">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <label for="description">Description</label>
+                <textarea id="description" name="description"></textarea>
+
+                <label for="experience">Experience</label>
+                <textarea id="experience" name="experience"></textarea>
+
+                <input type="submit" onclick="onSubmit(); return false" value="Submit">
+            </form>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
+
+<script src="../js/AgentSignup.js"></script>
